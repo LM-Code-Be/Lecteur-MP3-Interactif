@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur MP3</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre CSS -->
+    <link rel="stylesheet" href="mp3.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="image-container" class="mb-5 d-flex justify-content-center">
+                            <img id="image" src="logo.png" alt="Image" class="img-fluid">
+                        </div>
+                        <h3 class="card-title text-center" style="color: blue;"><b>Lecteur MP3 / MP3 MediaPlayer</b></h3>
+                        <input type="file" id="file-input" class="form-control mb-3">
+                        <audio id="audio" class="w-100 d-none" controls>
+                            Votre navigateur ne supporte pas l'élément audio.
+                        </audio>
+                        <canvas id="visualizer" class="w-100" height="100"></canvas>
+                        <div class="text-center mb-3">
+                            <button id="play" class="btn btn-primary mr-2">Play</button>
+                            <button id="pause" class="btn btn-secondary mr-2">Pause</button>
+                            <button id="stop" class="btn btn-danger">Stop</button>
+                        </div>
+                        <div class="progress">
+                            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0;"></div>
+                        </div>
+                        <div class="mt-3">
+                            <input type="range" id="volume" class="custom-range" min="0" max="1" step="0.01" value="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lien vers jQuery et Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Votre fichier JavaScript -->
+    <script src="mp3.js"></script>
+</body>
+</html>

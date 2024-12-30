@@ -1,0 +1,42 @@
+/* style.css */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Ajustez cette valeur en fonction de vos besoins */
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background-color: #007bff;
+}
+
+#visualizer {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
